@@ -1,25 +1,28 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-09 15:20:34
- * @LastEditTime: 2021-08-09 15:23:21
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vite-vue3-starter\src\App.vue
--->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  sasd
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <router-view></router-view>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { getCurrentInstance, defineComponent, reactive } from 'vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
+  components: {},
+  setup() {
+    const internalInstance: any = getCurrentInstance()
+    let api = internalInstance.appContext.config.globalProperties.$api // access to globalProperties
+    return {
+      api: reactive(api)
+    }
+  },
+  async mounted() {
+    try {
+      let res = await this.api.login({
+        parentCode: 'edu_dic'
+      })
+    } catch (e) {
+      console.log('error', e)
+    }
   }
 })
 </script>
