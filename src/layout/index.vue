@@ -1,12 +1,20 @@
-<!-- axios -->
+<!--  -->
 <template>
-  <div></div>
+  <div>
+    <Navbar />
+    <AppMain></AppMain>
+  </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+import { Navbar, AppMain } from './components'
 export default defineComponent({
   name: '',
+  components: {
+    Navbar,
+    AppMain
+  },
   setup() {
     return {}
   }

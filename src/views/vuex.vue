@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div>vuex</div>
+  <div>vuexssssssssssss</div>
 </template>
 
 <script>

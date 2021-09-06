@@ -16,13 +16,13 @@ export default defineComponent({
     }
   },
   async mounted() {
-    try {
-      let res = await this.api.login({
-        parentCode: 'edu_dic'
-      })
-    } catch (e) {
-      console.log('error', e)
-    }
+    // try {
+    //   let res = await this.api.login({
+    //     parentCode: 'edu_dic'
+    //   })
+    // } catch (e) {
+    //   console.log('error', e)
+    // }
   }
 })
 </script>
@@ -34,6 +34,5 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

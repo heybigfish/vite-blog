@@ -1,8 +1,6 @@
-<!--  -->
+<!-- axios -->
 <template>
-  <div>
-    <common-md></common-md>
-  </div>
+  <div style="height: 400px; border: 1px solid #ccc">axios</div>
 </template>
 
 <script>
