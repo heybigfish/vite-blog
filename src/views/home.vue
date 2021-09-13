@@ -1,7 +1,7 @@
 <!--  -->
 <template>
-  <div>
-    <common-md></common-md>
+  <div class="container">
+    <!-- <common-md></common-md> -->
     <parsing-md></parsing-md>
   </div>
 </template>
@@ -16,4 +16,21 @@ export default defineComponent({
 })
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.container {
+  position: relative;
+  :deep(.markdown-body) {
+    width: 900px;
+    position: unset;
+  }
+  :deep(#container-md) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+  }
+}
+</style>
