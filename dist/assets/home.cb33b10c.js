@@ -1,1 +1,0 @@
-import{d as a,a as n,o as s,e as o,h as e}from"./vendor.f3d8af82.js";const r=a({name:"",setup:()=>({})});r.render=function(a,r,d,t,m,f){const u=n("common-md"),c=n("parsing-md");return s(),o("div",null,[e(u),e(c)])};export{r as default};
