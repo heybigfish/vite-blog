@@ -4,10 +4,16 @@
 
 <script>
 export default {
+  name: 'common-md',
   data() {
     return {
-      text: 'sssssssssssssss'
+      text: 'test'
     }
   }
 }
 </script>
+<style lang="less" scoped>
+:deep(.hljs-keyword) {
+  color: #f60;
+}
+</style>

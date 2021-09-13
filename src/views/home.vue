@@ -2,6 +2,7 @@
 <template>
   <div>
     <common-md></common-md>
+    <parsing-md></parsing-md>
   </div>
 </template>
 
